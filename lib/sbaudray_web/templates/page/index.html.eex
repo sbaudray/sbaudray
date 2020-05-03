@@ -20,9 +20,11 @@
                 ><%= post.title %></a
               >
             </li>
-            <a class="inline-block mt-4 pl-4 font-light" href="<%=Routes.blog_path(@conn, :index) %>">
-              ...see all posts
-            </a>
+            <div class="mt-4 pl-4">
+              <a class="font-light" href="<%=Routes.blog_path(@conn, :index) %>">
+                ...see all posts
+              </a>
+            </div>
           <% end %>
         <% end %>
       </ul>
