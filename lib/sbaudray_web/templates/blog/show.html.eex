@@ -1,0 +1,7 @@
+<main class="main_container">
+  <article>
+    <h1 class="text-3xl text-teal-700 font-display"><%= @post.title %></h1>
+
+    <div class="md:pl-20 mt-12 max-w-3xl"><%= raw(@post.body) %></div>
+  </article>
+</main>

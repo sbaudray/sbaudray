@@ -1,0 +1,14 @@
+<main class="main_container">
+  <h1 class="font-display text-3xl text-teal-700">Blog Entries</h1>
+  <ul class="mt-12 ml-16">
+    <%= for post <- @posts do %>
+    <div class="text-gray-900 font-hairline text-xs"><%= post.date %></div>
+    <div class="text-xl">
+      <a href="<%=Routes.blog_path(@conn, :show, post.id) %>"
+        ><%= post.title %></a
+      >
+    </div>
+    <div class="font-serif mt-2"><%= post.description %></div>
+    <% end %>
+  </ul>
+</main>

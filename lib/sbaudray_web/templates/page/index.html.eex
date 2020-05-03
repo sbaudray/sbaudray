@@ -1,0 +1,57 @@
+<main class="main_container">
+  <h1 class="font-display text-5xl">
+    Hi, i'm
+    <span class="text-teal-700">S&eacute;bastien Baudray</span>
+    <div class="font-sans text-2xl">
+      A web developer building great user experiences through quality code
+    </div>
+  </h1>
+
+  <div class="mt-12 ml-16">
+    <section>
+      <h2 class="tracking-widest">Blog</h2>
+      <ul class="mt-4 pl-4">
+        <%= if Enum.empty?(@last_posts) do %>
+          No entries yet
+	<% else %> 
+          <%= for post <- @last_posts do %>
+            <li class="mt-4">
+              <a href="<%= Routes.blog_path(@conn, :show, post.id) %>"
+                ><%= post.title %></a
+              >
+            </li>
+            <a class="inline-block mt-4 pl-4 font-light" href="<%=Routes.blog_path(@conn, :index) %>">
+              ...see all posts
+            </a>
+          <% end %>
+        <% end %>
+      </ul>
+    </section>
+    <section class="mt-12">
+      <h2 class="tracking-widest">Work</h2>
+      <ul class="mt-4 pl-4">
+        <%= for work <- [ 
+          %{company: "Fastory", job: "Full-stack developer" },
+          %{company: "Ector", job: "Senior front-end developer"}
+        ] do %>
+          <li class="mt-4 grid grid-cols-work">
+            <span class="uppercase"><%= work.company %></span>
+            <span class="text-gray-600 font-light">\ <%= work.job %></span>
+          </li>
+        <% end %>
+      </ul>
+    </section>
+    <section class="mt-12">
+      <h2 class="tracking-widest">Infos</h2>
+      <div class="mt-4 pl-4">
+        <ul>
+          <li><a href="//github.com/sbaudray">Github</a></li>
+          <li class="mt-4"><a href="//twitter.com/sbaudray">Twitter</a></li>
+          <li class="mt-4">
+            <a href="//linkedin.com/in/sebastien-baudray">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</main>

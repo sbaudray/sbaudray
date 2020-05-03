@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title><%= title(assigns) %></title>
+    <meta name="description" content="<%= description(assigns) %>">
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/prism.css") %>"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/prism.js") %>"></script>
+  </head>
+  <body class="text-gray-900 theme_light">
+    <header class="p-8">
+      <nav class="flex justify-end">
+        <ul class="flex">
+          <li><a href="<%= Routes.page_path(@conn, :index) %>">Home</a></li>
+          <li class="ml-4"><a href="<%= Routes.blog_path(@conn, :index) %>">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <%= @inner_content %>
+  </body>
+</html>
