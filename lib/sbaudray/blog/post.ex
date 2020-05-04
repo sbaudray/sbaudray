@@ -3,6 +3,7 @@ defmodule Sbaudray.Blog.Post do
   defstruct [:id, :published, :date, :title, :author, :description, :tags, :body]
 
   def parse!(filename) do
+    IO.inspect(filename)
     [_dir, year, month_day_id] = Path.split(filename)
     [month, day, id_with_md] = String.split(month_day_id, "-", parts: 3)
 
