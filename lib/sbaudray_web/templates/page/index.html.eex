@@ -2,12 +2,12 @@
   <h1 class="font-display text-5xl">
     Hi, i'm
     <span class="text-teal-700">S&eacute;bastien Baudray</span>
-    <div class="font-sans text-2xl">
+    <div class="font-sans text-2xl font-hairline mt-4">
       A web developer building great user experiences through quality code
     </div>
   </h1>
 
-  <div class="mt-12 ml-16">
+  <div class="mt-16 ml-16">
     <section>
       <h2 class="tracking-widest">Blog</h2>
       <ul class="mt-4 pl-4">
