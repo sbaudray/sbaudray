@@ -1,6 +1,6 @@
 <main class="main_container">
   <h1 class="font-display text-3xl text-teal-700">Blog Entries</h1>
-  <ul class="mt-12 ml-16">
+  <ul class="mt-12 lg:ml-16">
     <%= for post <- @posts do %>
     <div class="text-gray-900 font-hairline text-xs"><%= post.date %></div>
     <div class="text-xl">

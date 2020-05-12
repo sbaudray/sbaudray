@@ -23,11 +23,11 @@ a:hover {
 }
 
 .main_container {
-  @apply mx-auto p-4;
+  @apply px-4 pt-4 pb-20;
 }
 
 @screen lg {
   .main_container {
-    @apply max-w-6xl;
+    @apply mx-auto max-w-6xl;
   }
 }
