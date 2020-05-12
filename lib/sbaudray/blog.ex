@@ -24,10 +24,6 @@ defmodule Sbaudray.Blog do
     @posts
   end
 
-  def last_posts do
-    @posts |> Enum.take(3)
-  end
-
   def get_post!(id) do
     case Enum.find(@posts, &(&1.id == id)) do
       nil -> raise NotFoundError

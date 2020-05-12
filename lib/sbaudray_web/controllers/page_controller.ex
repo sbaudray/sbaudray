@@ -4,11 +4,10 @@ defmodule SbaudrayWeb.PageController do
   alias Sbaudray.Blog
 
   def index(conn, _params) do
-    last_posts = Blog.last_posts()
-    IO.inspect(last_posts)
+    posts = Blog.list_posts()
 
     conn
-    |> assign(:last_posts, last_posts)
+    |> assign(:posts, posts)
     |> render("index.html")
   end
 end

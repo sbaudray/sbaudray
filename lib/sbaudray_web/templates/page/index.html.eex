@@ -11,22 +11,24 @@
     <section>
       <h2 class="tracking-widest">Blog</h2>
       <ul class="mt-4 pl-4">
-        <%= if Enum.empty?(@last_posts) do %>
+        <%= unless has_posts?(assigns) do %>
           No entries yet
 	<% else %> 
-          <%= for post <- @last_posts do %>
+          <%= for post <- last_posts(assigns) do %>
             <li class="mt-4">
               <a href="<%= Routes.blog_path(@conn, :show, post.id) %>"
                 ><%= post.title %></a
               >
             </li>
           <% end %>
+          <%= if enough_posts?(assigns) do %>
           <div class="mt-4 pl-4">
             <a class="font-light" href="<%=Routes.blog_path(@conn, :index) %>">
               ...see all posts
             </a>
           </div>
-        <% end %>
+          <% end %>
+          <% end %>
       </ul>
     </section>
     <section class="mt-12">
