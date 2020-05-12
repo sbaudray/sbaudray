@@ -2,7 +2,7 @@
 published: true
 title: Leverage JavaScript modules
 author: Sebastien Baudray
-description: javascript imports
+description: Make your life easier with JavaScript modules and another import strategy
 tags: javascript
 ---
 
