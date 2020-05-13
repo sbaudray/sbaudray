@@ -79,5 +79,5 @@ import * as Books from "./book";
 const isValidBook = Book.isValid(myBook);
 ```
 
-Nice, insn't it ?
+Nice, isn't it ?
 
