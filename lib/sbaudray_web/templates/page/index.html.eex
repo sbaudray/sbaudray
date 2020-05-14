@@ -40,7 +40,7 @@
         ] do %>
           <li class="mt-4 grid grid-cols-work">
             <span class="uppercase"><%= work.company %></span>
-            <span class="text-gray-600 font-light">\ <%= work.job %></span>
+            <span class="text-gray-800 font-light">\ <%= work.job %></span>
           </li>
         <% end %>
       </ul>
