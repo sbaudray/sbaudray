@@ -7,9 +7,8 @@
     <title><%= title(assigns) %></title>
     <meta name="description" content="<%= description(assigns) %>">
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
-    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/prism.css") %>"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/prism.js") %>"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <%= render_existing @view_module, "scripts.html", assigns %>
   </head>
   <body class="text-gray-900 theme_light">
     <header class="p-8">
