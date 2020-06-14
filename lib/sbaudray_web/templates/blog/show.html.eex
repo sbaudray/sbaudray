@@ -2,6 +2,6 @@
   <article>
     <h1 class="self-start text-3xl text-teal-700 font-display"><%= @post.title %></h1>
 
-    <div class="lg:ml-20 mt-12 max-w-3xl"><%= raw(@post.body) %></div>
+    <div class="lg:ml-20 mt-12 max-w-2xl"><%= raw(@post.body) %></div>
   </article>
 </main>

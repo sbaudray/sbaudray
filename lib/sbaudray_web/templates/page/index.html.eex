@@ -32,20 +32,6 @@
       </ul>
     </section>
     <section class="mt-12">
-      <h2 class="tracking-widest">Work</h2>
-      <ul class="mt-4 pl-4">
-        <%= for work <- [ 
-          %{company: "Fastory", job: "Full-stack developer" },
-          %{company: "Ector", job: "Senior front-end developer"}
-        ] do %>
-          <li class="mt-4 grid grid-cols-work">
-            <span class="uppercase"><%= work.company %></span>
-            <span class="text-gray-800 font-light">\ <%= work.job %></span>
-          </li>
-        <% end %>
-      </ul>
-    </section>
-    <section class="mt-12">
       <h2 class="tracking-widest">Infos</h2>
       <div class="mt-4 pl-4">
         <ul>

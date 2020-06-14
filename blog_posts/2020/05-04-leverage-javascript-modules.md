@@ -49,9 +49,7 @@ let create = () => {}
 let newFilm = Film.create({ title: "Sonatine"})
 ```
 
-Note that there is no export statement either, a module is automatically defined for the file.
-
-The JavaScript equivalent would use the "wildcard import":
+Note that there is no export statement either, a module is automatically defined for the file. The JavaScript equivalent would use the "wildcard import":
 
 ```js
 import * as Film from "./film";
@@ -78,6 +76,4 @@ import * as Books from "./book";
 
 const isValidBook = Book.isValid(myBook);
 ```
-
-Nice, isn't it ?
 

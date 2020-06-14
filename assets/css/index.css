@@ -11,7 +11,7 @@ code.inline {
 }
 
 p {
-  @apply font-serif text-lg;
+  @apply font-serif text-xl;
 }
 
 p + p {
