@@ -10,11 +10,11 @@ code.inline {
   @apply rounded text-sm bg-gray-200 py-1 px-2;
 }
 
-p {
+article p {
   @apply font-serif text-xl;
 }
 
-p + p {
+article p + article p {
   @apply mt-4;
 }
 
